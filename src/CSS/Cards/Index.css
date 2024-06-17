@@ -1,0 +1,31 @@
+.width_100{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+}
+.desing_calendario article{
+    width: calc(33% - 5px);
+}
+@media screen and (max-width: 930px){
+    .desing_calendario article{
+        width: calc(50% - 5px);
+    }
+    .desing_calendario picture{
+        height: 25vw;
+    }
+    .desing_calendario p{
+        text-wrap: nowrap;
+        justify-content: start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 600px){
+    .desing_calendario article{
+        width: 100%;
+    }
+    .desing_calendario picture{
+        height: 45vw;
+    }
+}

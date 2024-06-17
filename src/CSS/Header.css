@@ -1,0 +1,44 @@
+.bg__blue {
+  background-color: #53B0F9;
+}
+
+header nav ul:nth-child(2):hover li {
+  filter: blur(5px);
+}
+
+header nav ul:nth-child(2) li {
+  transition: all 0.3s ease-in-out;
+}
+
+header nav ul:nth-child(2) li:hover {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+header nav ul:nth-child(2) li:nth-child(5) {
+  display: none;
+}
+
+.desing_header {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.MnResponsiveActive {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul:nth-child(2) li:nth-child(1),
+  header nav ul:nth-child(2) li:nth-child(2),
+  header nav ul:nth-child(2) li:nth-child(3),
+  header nav ul:nth-child(2) li:nth-child(4) {
+    display: none;
+  }
+  header nav ul:nth-child(2) li:nth-child(5) {
+    display: flex;
+  }
+}

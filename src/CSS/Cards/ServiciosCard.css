@@ -1,0 +1,26 @@
+.desing_servicios .glow{
+    animation: rotate 30s infinite linear;
+}
+.desing_servicios .linear__anm--2{
+    rotate: 180deg;
+    animation: rotate2 10s infinite linear alternate-reverse;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+@media screen and (max-width: 1280px){
+    .desing_servicios picture{
+        display: none;
+    }
+    
+}
